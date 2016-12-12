@@ -1,0 +1,801 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.3">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Пробный тест</v8:content>
+		</v8:item>
+	</Title>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<AutoURL>false</AutoURL>
+	<AutoFillCheck>false</AutoFillCheck>
+	<Customizable>false</Customizable>
+	<CommandBarLocation>None</CommandBarLocation>
+	<VerticalScroll>useIfNecessary</VerticalScroll>
+	<CommandSet>
+		<ExcludedCommand>No</ExcludedCommand>
+		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
+		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
+	</CommandSet>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="OnClose">ПриЗакрытии</Event>
+	</Events>
+	<ChildItems>
+		<Pages name="Заглавная" id="18">
+			<EnableContentChange>true</EnableContentChange>
+			<HorizontalStretch>true</HorizontalStretch>
+			<VerticalStretch>true</VerticalStretch>
+			<PagesRepresentation>None</PagesRepresentation>
+			<ExtendedTooltip name="ЗаглавнаяРасширеннаяПодсказка" id="76"/>
+			<ChildItems>
+				<Page name="Шаг0" id="20">
+					<EnableContentChange>true</EnableContentChange>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Шаг0РасширеннаяПодсказка" id="77"/>
+					<ChildItems>
+						<InputField name="Дата" id="1">
+							<DataPath>Объект.Дата</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<SkipOnInput>true</SkipOnInput>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ДатаКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="78"/>
+						</InputField>
+						<InputField name="Пользователь" id="113">
+							<DataPath>Объект.Пользователь</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<SkipOnInput>true</SkipOnInput>
+							<OpenButton>false</OpenButton>
+							<ContextMenu name="ПользовательКонтекстноеМеню" id="114"/>
+							<ExtendedTooltip name="ПользовательРасширеннаяПодсказка" id="115"/>
+						</InputField>
+						<InputField name="Тест" id="3">
+							<DataPath>Объект.Тест</DataPath>
+							<SkipOnInput>true</SkipOnInput>
+							<EditMode>EnterOnInput</EditMode>
+							<DropListButton>true</DropListButton>
+							<TextEdit>false</TextEdit>
+							<ContextMenu name="ТестКонтекстноеМеню" id="4"/>
+							<ExtendedTooltip name="ТестРасширеннаяПодсказка" id="80"/>
+							<Events>
+								<Event name="OnChange">ТестПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="Комментарий" id="5">
+							<DataPath>Объект.Комментарий</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<HorizontalStretch>true</HorizontalStretch>
+							<ContextMenu name="КомментарийКонтекстноеМеню" id="6"/>
+							<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="81"/>
+						</InputField>
+						<CommandBar name="КоманднаяПанельНачало" id="61">
+							<EnableContentChange>true</EnableContentChange>
+							<HorizontalStretch>true</HorizontalStretch>
+							<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+							<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+							<HorizontalLocation>Center</HorizontalLocation>
+							<ExtendedTooltip name="КоманднаяПанельНачалоРасширеннаяПодсказка" id="82"/>
+							<ChildItems>
+								<Button name="ФормаНачать" id="26">
+									<Type>CommandBarButton</Type>
+									<DefaultButton>true</DefaultButton>
+									<DefaultItem>true</DefaultItem>
+									<CommandName>Form.Command.Начать</CommandName>
+									<ExtendedTooltip name="ФормаНачатьРасширеннаяПодсказка" id="83"/>
+								</Button>
+								<Button name="Закрыть1" id="38">
+									<Type>CommandBarButton</Type>
+									<Representation>PictureAndText</Representation>
+									<CommandName>Form.StandardCommand.Close</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.Close</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="Закрыть1РасширеннаяПодсказка" id="84"/>
+								</Button>
+							</ChildItems>
+						</CommandBar>
+					</ChildItems>
+				</Page>
+				<Page name="Шаг1" id="21">
+					<EnableContentChange>true</EnableContentChange>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Шаг1РасширеннаяПодсказка" id="85"/>
+					<ChildItems>
+						<ProgressBarField name="Таймер" id="116">
+							<DataPath>Таймер</DataPath>
+							<Visible>false</Visible>
+							<ReadOnly>true</ReadOnly>
+							<SkipOnInput>true</SkipOnInput>
+							<Width>1</Width>
+							<ShowPercent>true</ShowPercent>
+							<ContextMenu name="ТаймерКонтекстноеМеню" id="117"/>
+							<ExtendedTooltip name="ТаймерРасширеннаяПодсказка" id="118"/>
+						</ProgressBarField>
+						<ProgressBarField name="ХодВыполнения" id="119">
+							<DataPath>ХодВыполнения</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<SkipOnInput>true</SkipOnInput>
+							<Width>1</Width>
+							<ShowPercent>true</ShowPercent>
+							<ContextMenu name="ХодВыполненияКонтекстноеМеню" id="120"/>
+							<ExtendedTooltip name="ХодВыполненияРасширеннаяПодсказка" id="121"/>
+						</ProgressBarField>
+						<InputField name="ВопросТекст" id="63">
+							<DataPath>ВопросТекст</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<SkipOnInput>true</SkipOnInput>
+							<TitleLocation>None</TitleLocation>
+							<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<MultiLine>true</MultiLine>
+							<OpenButton>false</OpenButton>
+							<ChooseType>false</ChooseType>
+							<Font ref="sys:DefaultGUIFont" height="14" kind="WindowsFont"/>
+							<ContextMenu name="ВопросТекстКонтекстноеМеню" id="64"/>
+							<ExtendedTooltip name="ВопросТекстРасширеннаяПодсказка" id="86"/>
+							<Events>
+								<Event name="Opening">ВопросТекстОткрытие</Event>
+							</Events>
+						</InputField>
+						<UsualGroup name="Группа" id="52">
+							<EnableContentChange>true</EnableContentChange>
+							<HorizontalStretch>true</HorizontalStretch>
+							<VerticalStretch>true</VerticalStretch>
+							<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+							<GroupVerticalAlign>Center</GroupVerticalAlign>
+							<Group>Horizontal</Group>
+							<Representation>None</Representation>
+							<ChildItemsWidth>Equal</ChildItemsWidth>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаРасширеннаяПодсказка" id="87"/>
+							<ChildItems>
+								<UsualGroup name="Группа1" id="53">
+									<EnableContentChange>true</EnableContentChange>
+									<HorizontalStretch>true</HorizontalStretch>
+									<VerticalStretch>true</VerticalStretch>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ChildItemsWidth>Equal</ChildItemsWidth>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="88"/>
+									<ChildItems>
+										<Button name="Ответ1" id="50">
+											<Type>UsualButton</Type>
+											<Width>40</Width>
+											<Check>true</Check>
+											<CommandName>Form.Command.Ответ1</CommandName>
+											<Font ref="sys:DefaultGUIFont" height="14" kind="WindowsFont"/>
+											<ExtendedTooltip name="Ответ1РасширеннаяПодсказка" id="89"/>
+										</Button>
+										<Button name="Ответ3" id="54">
+											<Type>UsualButton</Type>
+											<Width>40</Width>
+											<Check>true</Check>
+											<CommandName>Form.Command.Ответ3</CommandName>
+											<Font ref="sys:DefaultGUIFont" height="14" kind="WindowsFont"/>
+											<ExtendedTooltip name="Ответ3РасширеннаяПодсказка" id="90"/>
+										</Button>
+										<Button name="Ответ5" id="57">
+											<Type>UsualButton</Type>
+											<Width>40</Width>
+											<Check>true</Check>
+											<CommandName>Form.Command.Ответ5</CommandName>
+											<Font ref="sys:DefaultGUIFont" height="14" kind="WindowsFont"/>
+											<ExtendedTooltip name="Ответ5РасширеннаяПодсказка" id="91"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа2" id="59">
+									<HorizontalStretch>true</HorizontalStretch>
+									<VerticalStretch>true</VerticalStretch>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ChildItemsWidth>Equal</ChildItemsWidth>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="92"/>
+									<ChildItems>
+										<Button name="Ответ2" id="51">
+											<Type>UsualButton</Type>
+											<Width>40</Width>
+											<Check>true</Check>
+											<CommandName>Form.Command.Ответ2</CommandName>
+											<Font ref="sys:DefaultGUIFont" height="14" kind="WindowsFont"/>
+											<ExtendedTooltip name="Ответ2РасширеннаяПодсказка" id="93"/>
+										</Button>
+										<Button name="Ответ4" id="55">
+											<Type>UsualButton</Type>
+											<Width>40</Width>
+											<Check>true</Check>
+											<CommandName>Form.Command.Ответ4</CommandName>
+											<Font ref="sys:DefaultGUIFont" height="14" kind="WindowsFont"/>
+											<ExtendedTooltip name="Ответ4РасширеннаяПодсказка" id="94"/>
+										</Button>
+										<Button name="Ответ6" id="58">
+											<Type>UsualButton</Type>
+											<Width>40</Width>
+											<Check>true</Check>
+											<CommandName>Form.Command.Ответ6</CommandName>
+											<Font ref="sys:DefaultGUIFont" height="14" kind="WindowsFont"/>
+											<ExtendedTooltip name="Ответ6РасширеннаяПодсказка" id="95"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<CommandBar name="КоманднаяПанельВопросы" id="62">
+							<EnableContentChange>true</EnableContentChange>
+							<HorizontalStretch>true</HorizontalStretch>
+							<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+							<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+							<HorizontalLocation>Center</HorizontalLocation>
+							<ExtendedTooltip name="КоманднаяПанельВопросыРасширеннаяПодсказка" id="96"/>
+							<ChildItems>
+								<Button name="ПредыдущийВопрос" id="66">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.ПредыдущийВопрос</CommandName>
+									<ExtendedTooltip name="ПредыдущийВопросРасширеннаяПодсказка" id="97"/>
+								</Button>
+								<Button name="СледующийВопрос" id="67">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.СледующийВопрос</CommandName>
+									<ExtendedTooltip name="СледующийВопросРасширеннаяПодсказка" id="98"/>
+								</Button>
+								<Button name="Закрыть2" id="47">
+									<Type>CommandBarButton</Type>
+									<Representation>PictureAndText</Representation>
+									<CommandName>Form.StandardCommand.Close</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.Close</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="Закрыть2РасширеннаяПодсказка" id="99"/>
+								</Button>
+							</ChildItems>
+						</CommandBar>
+					</ChildItems>
+				</Page>
+				<Page name="Шаг9" id="60">
+					<ReadOnly>true</ReadOnly>
+					<EnableContentChange>true</EnableContentChange>
+					<ToolTipRepresentation>None</ToolTipRepresentation>
+					<HorizontalStretch>true</HorizontalStretch>
+					<VerticalStretch>true</VerticalStretch>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Шаг9РасширеннаяПодсказка" id="100"/>
+					<ChildItems>
+						<LabelField name="ВремяИстекло" id="122">
+							<DataPath>ВремяИстекло</DataPath>
+							<Visible>false</Visible>
+							<ReadOnly>true</ReadOnly>
+							<SkipOnInput>true</SkipOnInput>
+							<TitleLocation>None</TitleLocation>
+							<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+							<VerticalStretch>false</VerticalStretch>
+							<TextColor>style:SpecialTextColor</TextColor>
+							<ContextMenu name="ВремяИстеклоКонтекстноеМеню" id="123"/>
+							<ExtendedTooltip name="ВремяИстеклоРасширеннаяПодсказка" id="124"/>
+						</LabelField>
+						<InputField name="ЗатраченоВремени" id="125">
+							<DataPath>Объект.ЗатраченоВремени</DataPath>
+							<Visible>false</Visible>
+							<ReadOnly>true</ReadOnly>
+							<SkipOnInput>true</SkipOnInput>
+							<ContextMenu name="ЗатраченоВремениКонтекстноеМеню" id="126"/>
+							<ExtendedTooltip name="ЗатраченоВремениРасширеннаяПодсказка" id="127"/>
+						</InputField>
+						<InputField name="Оценка" id="107">
+							<DataPath>Объект.Оценка</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<SkipOnInput>true</SkipOnInput>
+							<ContextMenu name="ОценкаКонтекстноеМеню" id="108"/>
+							<ExtendedTooltip name="ОценкаРасширеннаяПодсказка" id="109"/>
+							<Events>
+								<Event name="Opening">ОценкаОткрытие</Event>
+							</Events>
+						</InputField>
+						<InputField name="Результат" id="70">
+							<DataPath>Результат</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<SkipOnInput>true</SkipOnInput>
+							<ContextMenu name="РезультатКонтекстноеМеню" id="71"/>
+							<ExtendedTooltip name="РезультатРасширеннаяПодсказка" id="102"/>
+						</InputField>
+						<InputField name="ОценкаКомментарий" id="110">
+							<DataPath>ОценкаКомментарий</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<SkipOnInput>true</SkipOnInput>
+							<TitleLocation>Left</TitleLocation>
+							<MultiLine>true</MultiLine>
+							<ContextMenu name="ОценкаКомментарийКонтекстноеМеню" id="111"/>
+							<ExtendedTooltip name="ОценкаКомментарийРасширеннаяПодсказка" id="112"/>
+						</InputField>
+						<PictureDecoration name="Декорация1" id="74">
+							<Enabled>false</Enabled>
+							<VerticalStretch>true</VerticalStretch>
+							<SkipOnInput>true</SkipOnInput>
+							<ContextMenu name="Декорация1КонтекстноеМеню" id="75"/>
+							<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="103"/>
+						</PictureDecoration>
+						<CommandBar name="КоманднаяПанельОценка" id="72">
+							<EnableContentChange>true</EnableContentChange>
+							<HorizontalStretch>true</HorizontalStretch>
+							<GroupHorizontalAlign>Center</GroupHorizontalAlign>
+							<GroupVerticalAlign>Bottom</GroupVerticalAlign>
+							<HorizontalLocation>Center</HorizontalLocation>
+							<ExtendedTooltip name="КоманднаяПанельОценкаРасширеннаяПодсказка" id="104"/>
+							<ChildItems>
+								<Button name="Закрыть9" id="73">
+									<Type>CommandBarButton</Type>
+									<Representation>PictureAndText</Representation>
+									<DefaultItem>true</DefaultItem>
+									<CommandName>Form.StandardCommand.Close</CommandName>
+									<ExtendedTooltip name="Закрыть9РасширеннаяПодсказка" id="105"/>
+								</Button>
+								<Button name="Печать" id="128">
+									<Type>CommandBarButton</Type>
+									<CommandName>Form.Command.Печать</CommandName>
+									<ExtendedTooltip name="ПечатьРасширеннаяПодсказка" id="129"/>
+								</Button>
+							</ChildItems>
+						</CommandBar>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.Тестирование</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ТекущийВопрос" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вопрос</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Вопросы</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Ответ1" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ответ №1</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ВариантыОтветов</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Ответ2" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ответ №2</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ВариантыОтветов</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Ответ3" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ответ №3</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ВариантыОтветов</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Ответ4" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ответ №4</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ВариантыОтветов</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Ответ5" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ответ №5</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ВариантыОтветов</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Ответ6" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ответ №6</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ВариантыОтветов</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Вопросник" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вопросник</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Вопрос" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вопрос</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Вопросы</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ВопросКод" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вопрос код</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>4</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Ответ" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ответ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ВариантыОтветов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Результат" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Результат</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Шаг" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шаг</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВопросТекст" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вопрос</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Результат" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результат</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>6</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<Edit>
+				<xr:Common>false</xr:Common>
+			</Edit>
+		</Attribute>
+		<Attribute name="ВремяСтарта" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Время старта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ХодВыполнения" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ход выполнения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВремяИстекло" id="17">
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОценкаКомментарий" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Оценка комментарий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОбратныйОтсчетВремени" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обратный отсчет времени</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Таймер" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таймер</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДокТестирование" id="21">
+			<Type>
+				<v8:Type>cfg:DocumentRef.Тестирование</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Начать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.BusinessProcessStart</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Начать</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="Ответ1" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ответ1</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ответ1</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Ответ1</Action>
+			<Representation>TextPicture</Representation>
+			<ModifiesSavedData>true</ModifiesSavedData>
+		</Command>
+		<Command name="Ответ2" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ответ2</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Ответ2</Action>
+			<Representation>TextPicture</Representation>
+			<ModifiesSavedData>true</ModifiesSavedData>
+		</Command>
+		<Command name="Ответ3" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ответ3</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Ответ3</Action>
+			<Representation>TextPicture</Representation>
+			<ModifiesSavedData>true</ModifiesSavedData>
+		</Command>
+		<Command name="Ответ4" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ответ4</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Ответ4</Action>
+			<Representation>TextPicture</Representation>
+			<ModifiesSavedData>true</ModifiesSavedData>
+		</Command>
+		<Command name="Ответ5" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ответ5</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Ответ5</Action>
+			<Representation>TextPicture</Representation>
+			<ModifiesSavedData>true</ModifiesSavedData>
+		</Command>
+		<Command name="Ответ6" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ответ6</v8:content>
+				</v8:item>
+			</Title>
+			<Action>Ответ6</Action>
+			<Representation>TextPicture</Representation>
+			<ModifiesSavedData>true</ModifiesSavedData>
+		</Command>
+		<Command name="СледующийВопрос" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Следующий вопрос</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Следующий вопрос</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.MoveRight</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>СледующийВопрос</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ПредыдущийВопрос" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предыдущий вопрос</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Предыдущий вопрос</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.MoveLeft</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>ПредыдущийВопрос</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="Печать" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>StdPicture.Print</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Печать</Action>
+		</Command>
+	</Commands>
+</Form>

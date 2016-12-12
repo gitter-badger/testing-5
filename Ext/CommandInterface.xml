@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.3">
+	<SubsystemsVisibility>
+		<Subsystem name="Subsystem.УчебныйПроцесс">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Пользователь">true</xr:Value>
+				<xr:Value name="Role.Гость">false</xr:Value>
+			</Visibility>
+		</Subsystem>
+		<Subsystem name="Subsystem.УчебныеМатериалы">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Пользователь">true</xr:Value>
+			</Visibility>
+		</Subsystem>
+		<Subsystem name="Subsystem.Администрирование">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Пользователь">false</xr:Value>
+				<xr:Value name="Role.Гость">false</xr:Value>
+			</Visibility>
+		</Subsystem>
+	</SubsystemsVisibility>
+	<SubsystemsOrder>
+		<Subsystem>Subsystem.УчебныйПроцесс</Subsystem>
+		<Subsystem>Subsystem.УчебныеМатериалы</Subsystem>
+		<Subsystem>Subsystem.Тестирование</Subsystem>
+		<Subsystem>Subsystem.Администрирование</Subsystem>
+	</SubsystemsOrder>
+</CommandInterface>
