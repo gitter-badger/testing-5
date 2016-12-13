@@ -93,7 +93,6 @@
 							<ChildItems>
 								<Button name="ФормаНачать" id="26">
 									<Type>CommandBarButton</Type>
-									<DefaultButton>true</DefaultButton>
 									<DefaultItem>true</DefaultItem>
 									<CommandName>Form.Command.Начать</CommandName>
 									<ExtendedTooltip name="ФормаНачатьРасширеннаяПодсказка" id="83"/>
@@ -347,11 +346,15 @@
 									<Type>CommandBarButton</Type>
 									<Representation>PictureAndText</Representation>
 									<DefaultItem>true</DefaultItem>
+									<HorizontalStretch>true</HorizontalStretch>
+									<VerticalStretch>true</VerticalStretch>
 									<CommandName>Form.StandardCommand.Close</CommandName>
 									<ExtendedTooltip name="Закрыть9РасширеннаяПодсказка" id="105"/>
 								</Button>
 								<Button name="Печать" id="128">
 									<Type>CommandBarButton</Type>
+									<HorizontalStretch>true</HorizontalStretch>
+									<VerticalStretch>true</VerticalStretch>
 									<CommandName>Form.Command.Печать</CommandName>
 									<ExtendedTooltip name="ПечатьРасширеннаяПодсказка" id="129"/>
 								</Button>
@@ -796,6 +799,7 @@
 				<xr:LoadTransparent>true</xr:LoadTransparent>
 			</Picture>
 			<Action>Печать</Action>
+			<Representation>TextPicture</Representation>
 		</Command>
 	</Commands>
 </Form>

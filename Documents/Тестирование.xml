@@ -362,7 +362,6 @@
 					<FullTextSearch>Use</FullTextSearch>
 				</Properties>
 			</Attribute>
-			<Form>ФормаДокумента</Form>
 			<Form>ФормаДокумента1</Form>
 			<TabularSection uuid="1c16f86d-d5d3-4864-b04a-0871e55640ba">
 				<InternalInfo>
