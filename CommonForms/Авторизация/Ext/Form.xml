@@ -5,12 +5,19 @@
 	<Customizable>false</Customizable>
 	<CommandBarLocation>Top</CommandBarLocation>
 	<CommandSet>
+		<ExcludedCommand>No</ExcludedCommand>
 		<ExcludedCommand>SaveValues</ExcludedCommand>
+		<ExcludedCommand>Close</ExcludedCommand>
+		<ExcludedCommand>Abort</ExcludedCommand>
+		<ExcludedCommand>Retry</ExcludedCommand>
+		<ExcludedCommand>Yes</ExcludedCommand>
+		<ExcludedCommand>Cancel</ExcludedCommand>
 		<ExcludedCommand>RestoreValues</ExcludedCommand>
+		<ExcludedCommand>Ignore</ExcludedCommand>
+		<ExcludedCommand>OK</ExcludedCommand>
 	</CommandSet>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<HorizontalAlign>Right</HorizontalAlign>
-		<Autofill>false</Autofill>
 		<ChildItems>
 			<Button name="ФормаGo" id="9">
 				<Type>CommandBarButton</Type>
@@ -20,13 +27,6 @@
 				<CommandName>Form.Command.Go</CommandName>
 				<ExtendedTooltip name="ФормаGoРасширеннаяПодсказка" id="10"/>
 			</Button>
-			<Button name="КнопкаОтмена" id="7">
-				<Type>CommandBarButton</Type>
-				<HorizontalStretch>true</HorizontalStretch>
-				<VerticalStretch>true</VerticalStretch>
-				<CommandName>Form.StandardCommand.Cancel</CommandName>
-				<ExtendedTooltip name="КнопкаОтменаРасширеннаяПодсказка" id="8"/>
-			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
@@ -35,6 +35,7 @@
 	<ChildItems>
 		<InputField name="ИмяПользователя" id="1">
 			<DataPath>ИмяПользователя</DataPath>
+			<DefaultItem>true</DefaultItem>
 			<ChooseType>false</ChooseType>
 			<ContextMenu name="ИмяПользователяКонтекстноеМеню" id="2"/>
 			<ExtendedTooltip name="ИмяПользователяРасширеннаяПодсказка" id="3"/>
@@ -42,8 +43,26 @@
 		<InputField name="Пароль" id="4">
 			<DataPath>Пароль</DataPath>
 			<PasswordMode>true</PasswordMode>
+			<AutoMarkIncomplete>true</AutoMarkIncomplete>
 			<ContextMenu name="ПарольКонтекстноеМеню" id="5"/>
 			<ExtendedTooltip name="ПарольРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<CheckBoxField name="Регистрация" id="14">
+			<DataPath>Регистрация</DataPath>
+			<CheckBoxType>Auto</CheckBoxType>
+			<ContextMenu name="РегистрацияКонтекстноеМеню" id="15"/>
+			<ExtendedTooltip name="РегистрацияРасширеннаяПодсказка" id="16"/>
+			<Events>
+				<Event name="OnChange">РегистрацияПриИзменении</Event>
+			</Events>
+		</CheckBoxField>
+		<InputField name="ПарольПовторно" id="11">
+			<DataPath>ПарольПовторно</DataPath>
+			<Visible>false</Visible>
+			<Wrap>false</Wrap>
+			<ChooseType>false</ChooseType>
+			<ContextMenu name="ПарольПовторноКонтекстноеМеню" id="12"/>
+			<ExtendedTooltip name="ПарольПовторноРасширеннаяПодсказка" id="13"/>
 		</InputField>
 	</ChildItems>
 	<Attributes>
@@ -76,6 +95,49 @@
 					<v8:Length>36</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПарольПовторно" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пароль (повторно)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>36</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="Регистрация" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Регистрация</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Шагомер" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шагомер</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>10</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
 			</Type>
 		</Attribute>
 	</Attributes>

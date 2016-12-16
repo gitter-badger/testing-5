@@ -46,20 +46,12 @@
 	<object>
 		<name>Catalog.Тесты.StandardAttribute.PredefinedDataName</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.Тесты.StandardAttribute.Predefined</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -68,20 +60,12 @@
 	<object>
 		<name>Catalog.Тесты.StandardAttribute.Ref</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.Тесты.StandardAttribute.DeletionMark</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -90,20 +74,12 @@
 	<object>
 		<name>Catalog.Тесты.StandardAttribute.IsFolder</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.Тесты.StandardAttribute.Owner</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -112,10 +88,6 @@
 	<object>
 		<name>Catalog.Тесты.StandardAttribute.Parent</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
@@ -123,20 +95,12 @@
 	<object>
 		<name>Catalog.Тесты.StandardAttribute.Description</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.Тесты.StandardAttribute.Code</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -287,13 +251,13 @@
 			<name>Read</name>
 			<value>true</value>
 		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
 	</object>
 	<object>
 		<name>Catalog.Предметы.StandardAttribute.PredefinedDataName</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -302,20 +266,12 @@
 	<object>
 		<name>Catalog.Предметы.StandardAttribute.Predefined</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.Предметы.StandardAttribute.Ref</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -324,20 +280,12 @@
 	<object>
 		<name>Catalog.Предметы.StandardAttribute.DeletionMark</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.Предметы.StandardAttribute.IsFolder</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -346,20 +294,12 @@
 	<object>
 		<name>Catalog.Предметы.StandardAttribute.Owner</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.Предметы.StandardAttribute.Parent</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -368,20 +308,12 @@
 	<object>
 		<name>Catalog.Предметы.StandardAttribute.Description</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.Предметы.StandardAttribute.Code</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -556,6 +488,20 @@
 		<right>
 			<name>Read</name>
 			<value>true</value>
+			<restrictionByCondition>
+				<field>Ref</field>
+				<field>DataVersion</field>
+				<field>Code</field>
+				<field>Description</field>
+				<field>Parent</field>
+				<field>IsFolder</field>
+				<field>DeletionMark</field>
+				<field>Predefined</field>
+				<field>PredefinedDataName</field>
+				<field>ФизЛицо</field>
+				<field>Комментарий</field>
+				<condition>ГДЕ Ссылка = &amp;ТекущийПользователь</condition>
+			</restrictionByCondition>
 		</right>
 	</object>
 	<object>

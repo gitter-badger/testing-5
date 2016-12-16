@@ -27,6 +27,7 @@
 				<xr:Item xsi:type="xr:MDObjectRef">Role.Пользователь</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">Role.Гость</xr:Item>
 				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.Календарь</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">75663016-0a65-40a9-88fb-2f4fd8a78a19</xr:Item>
 			</Content>
 		</Properties>
 		<ChildObjects/>

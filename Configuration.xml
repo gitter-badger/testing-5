@@ -142,8 +142,8 @@
 			<EventSubscription>СправочникОбъектПередЗаписью</EventSubscription>
 			<CommonCommand>СоздатьПользователяИБ</CommonCommand>
 			<Constant>ОбратныйОтсчетВремениПриТестировании</Constant>
-			<CommonForm>Календарь</CommonForm>
 			<CommonForm>Параметры</CommonForm>
+			<CommonForm>Календарь</CommonForm>
 			<CommonForm>Авторизация</CommonForm>
 			<CommonForm>ПечатнаяФорма</CommonForm>
 			<Catalog>Классы</Catalog>

@@ -275,12 +275,26 @@
 			<name>Read</name>
 			<value>true</value>
 			<restrictionByCondition>
+				<field>Ref</field>
+				<field>DataVersion</field>
+				<field>Code</field>
+				<field>Description</field>
+				<field>Parent</field>
+				<field>IsFolder</field>
+				<field>DeletionMark</field>
+				<field>Predefined</field>
+				<field>PredefinedDataName</field>
+				<field>ФизЛицо</field>
+				<field>Комментарий</field>
 				<condition>ГДЕ Ссылка = &amp;ТекущийПользователь</condition>
 			</restrictionByCondition>
 		</right>
 		<right>
 			<name>Update</name>
 			<value>true</value>
+			<restrictionByCondition>
+				<condition>ГДЕ Ссылка = &amp;ТекущийПользователь</condition>
+			</restrictionByCondition>
 		</right>
 		<right>
 			<name>View</name>
