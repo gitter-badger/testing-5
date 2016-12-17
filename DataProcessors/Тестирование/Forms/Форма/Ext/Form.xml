@@ -6,7 +6,6 @@
 			<v8:content>Пробный тест</v8:content>
 		</v8:item>
 	</Title>
-	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<AutoTitle>false</AutoTitle>
 	<AutoURL>false</AutoURL>
 	<AutoFillCheck>false</AutoFillCheck>

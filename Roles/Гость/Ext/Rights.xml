@@ -120,10 +120,6 @@
 	<object>
 		<name>Catalog.Предметы.Attribute.Уровень</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
@@ -138,20 +134,12 @@
 	<object>
 		<name>Catalog.Вопросы.StandardAttribute.PredefinedDataName</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.Вопросы.StandardAttribute.Predefined</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -160,20 +148,12 @@
 	<object>
 		<name>Catalog.Вопросы.StandardAttribute.Ref</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.Вопросы.StandardAttribute.DeletionMark</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -182,20 +162,12 @@
 	<object>
 		<name>Catalog.Вопросы.StandardAttribute.IsFolder</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.Вопросы.StandardAttribute.Owner</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -204,10 +176,6 @@
 	<object>
 		<name>Catalog.Вопросы.StandardAttribute.Parent</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
@@ -215,20 +183,12 @@
 	<object>
 		<name>Catalog.Вопросы.StandardAttribute.Description</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.Вопросы.StandardAttribute.Code</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -475,10 +435,6 @@
 	<object>
 		<name>Catalog.Преподаватели.TabularSection.Предметы</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
@@ -631,17 +587,9 @@
 			<name>View</name>
 			<value>true</value>
 		</right>
-		<right>
-			<name>InputByString</name>
-			<value>true</value>
-		</right>
 	</object>
 	<object>
 		<name>Catalog.Преподаватели.StandardAttribute.PredefinedDataName</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -650,20 +598,12 @@
 	<object>
 		<name>Catalog.Преподаватели.StandardAttribute.Predefined</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.Преподаватели.StandardAttribute.Ref</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -672,20 +612,12 @@
 	<object>
 		<name>Catalog.Преподаватели.StandardAttribute.DeletionMark</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.Преподаватели.StandardAttribute.IsFolder</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -694,20 +626,12 @@
 	<object>
 		<name>Catalog.Преподаватели.StandardAttribute.Owner</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.Преподаватели.StandardAttribute.Parent</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -716,20 +640,12 @@
 	<object>
 		<name>Catalog.Преподаватели.StandardAttribute.Description</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.Преподаватели.StandardAttribute.Code</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -745,20 +661,12 @@
 	<object>
 		<name>Catalog.ВариантыОтветов.StandardAttribute.PredefinedDataName</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.ВариантыОтветов.StandardAttribute.Predefined</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -767,20 +675,12 @@
 	<object>
 		<name>Catalog.ВариантыОтветов.StandardAttribute.Ref</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.ВариантыОтветов.StandardAttribute.DeletionMark</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -789,20 +689,12 @@
 	<object>
 		<name>Catalog.ВариантыОтветов.StandardAttribute.IsFolder</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.ВариантыОтветов.StandardAttribute.Owner</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -811,10 +703,6 @@
 	<object>
 		<name>Catalog.ВариантыОтветов.StandardAttribute.Parent</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
@@ -822,20 +710,12 @@
 	<object>
 		<name>Catalog.ВариантыОтветов.StandardAttribute.Description</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.ВариантыОтветов.StandardAttribute.Code</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -855,20 +735,12 @@
 	<object>
 		<name>Catalog.Оценки.StandardAttribute.PredefinedDataName</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.Оценки.StandardAttribute.Predefined</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -877,20 +749,12 @@
 	<object>
 		<name>Catalog.Оценки.StandardAttribute.Ref</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.Оценки.StandardAttribute.DeletionMark</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -899,20 +763,12 @@
 	<object>
 		<name>Catalog.Оценки.StandardAttribute.IsFolder</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.Оценки.StandardAttribute.Owner</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -921,10 +777,6 @@
 	<object>
 		<name>Catalog.Оценки.StandardAttribute.Parent</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
@@ -932,20 +784,12 @@
 	<object>
 		<name>Catalog.Оценки.StandardAttribute.Description</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.Оценки.StandardAttribute.Code</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -980,20 +824,12 @@
 	<object>
 		<name>Catalog.Языки.StandardAttribute.PredefinedDataName</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.Языки.StandardAttribute.Predefined</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -1002,20 +838,12 @@
 	<object>
 		<name>Catalog.Языки.StandardAttribute.Ref</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.Языки.StandardAttribute.DeletionMark</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -1024,20 +852,12 @@
 	<object>
 		<name>Catalog.Языки.StandardAttribute.IsFolder</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.Языки.StandardAttribute.Owner</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -1046,10 +866,6 @@
 	<object>
 		<name>Catalog.Языки.StandardAttribute.Parent</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
@@ -1057,20 +873,12 @@
 	<object>
 		<name>Catalog.Языки.StandardAttribute.Description</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
 	</object>
 	<object>
 		<name>Catalog.Языки.StandardAttribute.Code</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -1287,10 +1095,6 @@
 	</object>
 	<object>
 		<name>Catalog.Преподаватели.Attribute.ФизЛицо</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -1606,10 +1410,6 @@
 	<object>
 		<name>Catalog.Преподаватели.TabularSection.Предметы.Attribute.Предмет</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
@@ -1627,10 +1427,6 @@
 	</object>
 	<object>
 		<name>Catalog.Преподаватели.Attribute.Предмет</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -1711,10 +1507,6 @@
 	</object>
 	<object>
 		<name>Catalog.Оценки.Attribute.Результат</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
