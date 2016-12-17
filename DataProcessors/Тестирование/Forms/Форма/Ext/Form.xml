@@ -77,6 +77,10 @@
 						</InputField>
 						<InputField name="Комментарий" id="5">
 							<DataPath>Объект.Комментарий</DataPath>
+							<UserVisible>
+								<xr:Common>true</xr:Common>
+								<xr:Value name="Role.Гость">false</xr:Value>
+							</UserVisible>
 							<EditMode>EnterOnInput</EditMode>
 							<HorizontalStretch>true</HorizontalStretch>
 							<ContextMenu name="КомментарийКонтекстноеМеню" id="6"/>
@@ -203,6 +207,7 @@
 									</ChildItems>
 								</UsualGroup>
 								<UsualGroup name="Группа2" id="59">
+									<EnableContentChange>true</EnableContentChange>
 									<HorizontalStretch>true</HorizontalStretch>
 									<VerticalStretch>true</VerticalStretch>
 									<Group>Vertical</Group>
@@ -370,7 +375,6 @@
 				<v8:Type>cfg:DataProcessorObject.Тестирование</v8:Type>
 			</Type>
 			<MainAttribute>true</MainAttribute>
-			<SavedData>true</SavedData>
 		</Attribute>
 		<Attribute name="ТекущийВопрос" id="2">
 			<Title>
