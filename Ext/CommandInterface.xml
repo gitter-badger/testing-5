@@ -26,10 +26,12 @@
 		</Subsystem>
 		<Subsystem name="Subsystem.Администрирование">
 			<Visibility>
-				<xr:Common>true</xr:Common>
+				<xr:Common>false</xr:Common>
 				<xr:Value name="Role.Пользователь">false</xr:Value>
 				<xr:Value name="Role.Гость">false</xr:Value>
 				<xr:Value name="Role.Преподавтель">false</xr:Value>
+				<xr:Value name="Role.Администратор">true</xr:Value>
+				<xr:Value name="Role.ПолныйДоступ">true</xr:Value>
 			</Visibility>
 		</Subsystem>
 	</SubsystemsVisibility>

@@ -96,7 +96,6 @@
 							<ChildItems>
 								<Button name="ФормаНачать" id="26">
 									<Type>CommandBarButton</Type>
-									<DefaultItem>true</DefaultItem>
 									<CommandName>Form.Command.Начать</CommandName>
 									<ExtendedTooltip name="ФормаНачатьРасширеннаяПодсказка" id="83"/>
 								</Button>
@@ -346,14 +345,16 @@
 							<HorizontalLocation>Center</HorizontalLocation>
 							<ExtendedTooltip name="КоманднаяПанельОценкаРасширеннаяПодсказка" id="104"/>
 							<ChildItems>
-								<Button name="Закрыть9" id="73">
+								<Button name="Заново" id="130">
 									<Type>CommandBarButton</Type>
-									<Representation>PictureAndText</Representation>
-									<DefaultItem>true</DefaultItem>
-									<HorizontalStretch>true</HorizontalStretch>
-									<VerticalStretch>true</VerticalStretch>
-									<CommandName>Form.StandardCommand.Close</CommandName>
-									<ExtendedTooltip name="Закрыть9РасширеннаяПодсказка" id="105"/>
+									<CommandName>Form.Command.Начать</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Заново</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ЗановоРасширеннаяПодсказка" id="131"/>
 								</Button>
 								<Button name="Печать" id="128">
 									<Type>CommandBarButton</Type>
@@ -361,6 +362,14 @@
 									<VerticalStretch>true</VerticalStretch>
 									<CommandName>Form.Command.Печать</CommandName>
 									<ExtendedTooltip name="ПечатьРасширеннаяПодсказка" id="129"/>
+								</Button>
+								<Button name="Закрыть9" id="73">
+									<Type>CommandBarButton</Type>
+									<Representation>PictureAndText</Representation>
+									<HorizontalStretch>true</HorizontalStretch>
+									<VerticalStretch>true</VerticalStretch>
+									<CommandName>Form.StandardCommand.Close</CommandName>
+									<ExtendedTooltip name="Закрыть9РасширеннаяПодсказка" id="105"/>
 								</Button>
 							</ChildItems>
 						</CommandBar>
@@ -668,7 +677,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Начать</v8:content>
+					<v8:content>Пройти тест</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Picture>
@@ -691,6 +700,7 @@
 					<v8:content>Ответ1</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Shortcut>1</Shortcut>
 			<Action>Ответ1</Action>
 			<Representation>TextPicture</Representation>
 			<ModifiesSavedData>true</ModifiesSavedData>
@@ -702,6 +712,7 @@
 					<v8:content>Ответ2</v8:content>
 				</v8:item>
 			</Title>
+			<Shortcut>2</Shortcut>
 			<Action>Ответ2</Action>
 			<Representation>TextPicture</Representation>
 			<ModifiesSavedData>true</ModifiesSavedData>
@@ -713,6 +724,7 @@
 					<v8:content>Ответ3</v8:content>
 				</v8:item>
 			</Title>
+			<Shortcut>3</Shortcut>
 			<Action>Ответ3</Action>
 			<Representation>TextPicture</Representation>
 			<ModifiesSavedData>true</ModifiesSavedData>
@@ -724,6 +736,7 @@
 					<v8:content>Ответ4</v8:content>
 				</v8:item>
 			</Title>
+			<Shortcut>4</Shortcut>
 			<Action>Ответ4</Action>
 			<Representation>TextPicture</Representation>
 			<ModifiesSavedData>true</ModifiesSavedData>
@@ -735,6 +748,7 @@
 					<v8:content>Ответ5</v8:content>
 				</v8:item>
 			</Title>
+			<Shortcut>5</Shortcut>
 			<Action>Ответ5</Action>
 			<Representation>TextPicture</Representation>
 			<ModifiesSavedData>true</ModifiesSavedData>
@@ -746,6 +760,7 @@
 					<v8:content>Ответ6</v8:content>
 				</v8:item>
 			</Title>
+			<Shortcut>6</Shortcut>
 			<Action>Ответ6</Action>
 			<Representation>TextPicture</Representation>
 			<ModifiesSavedData>true</ModifiesSavedData>
@@ -797,6 +812,7 @@
 					<v8:content>Печать</v8:content>
 				</v8:item>
 			</Title>
+			<Shortcut>Ctrl+P</Shortcut>
 			<Picture>
 				<xr:Ref>StdPicture.Print</xr:Ref>
 				<xr:LoadTransparent>true</xr:LoadTransparent>

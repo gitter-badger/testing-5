@@ -18,6 +18,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.Тестирование.TabularSection.Ответы.Attribute.Вес</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Subsystem.УчебныеМатериалы</name>
 		<right>
 			<name>View</name>
@@ -112,6 +119,30 @@
 		<right>
 			<name>Read</name>
 			<value>true</value>
+			<restrictionByCondition>
+				<field>Ref</field>
+				<field>DataVersion</field>
+				<field>Number</field>
+				<field>Date</field>
+				<field>Posted</field>
+				<field>DeletionMark</field>
+				<field>Учащийся</field>
+				<field>Тест</field>
+				<field>Оценка</field>
+				<field>ЗатраченоВремени</field>
+				<field>Комментарий</field>
+				<field>Вопросы</field>
+				<field>Вопросы.LineNumber</field>
+				<field>Вопросы.Вопрос</field>
+				<field>Вопросы.Ответ</field>
+				<field>Вопросы.Результат</field>
+				<field>Ответы</field>
+				<field>Ответы.LineNumber</field>
+				<field>Ответы.Ответ</field>
+				<field>Ответы.Вес</field>
+				<field>Ответы.Вопрос</field>
+				<condition>ГДЕ Учащийся = &amp;ФизЛицо</condition>
+			</restrictionByCondition>
 		</right>
 		<right>
 			<name>Insert</name>
@@ -119,10 +150,6 @@
 		</right>
 		<right>
 			<name>Update</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Delete</name>
 			<value>true</value>
 		</right>
 		<right>
@@ -139,10 +166,6 @@
 		</right>
 		<right>
 			<name>Edit</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveDelete</name>
 			<value>true</value>
 		</right>
 		<right>
@@ -191,6 +214,13 @@
 			<name>View</name>
 			<value>false</value>
 		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.Тестирование.TabularSection.Ответы.Attribute.Ответ</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -446,6 +476,20 @@
 		<right>
 			<name>InputByString</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.Тестирование.Attribute.ЗатраченоВремени</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.Тестирование.TabularSection.Ответы</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -740,6 +784,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.Тестирование.TabularSection.Ответы.Attribute.Вопрос</name>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.Пользователи.Attribute.ФизЛицо</name>
 		<right>
 			<name>Edit</name>
@@ -884,4 +935,8 @@
 			<value>true</value>
 		</right>
 	</object>
+	<restrictionTemplate>
+		<name>Пользователь</name>
+		<condition>ГДЕ Ссылка = &amp;ТекущийПользователь</condition>
+	</restrictionTemplate>
 </Rights>

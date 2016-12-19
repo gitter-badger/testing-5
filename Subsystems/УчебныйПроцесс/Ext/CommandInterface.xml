@@ -7,9 +7,14 @@
 				<xr:Value name="Role.Пользователь">false</xr:Value>
 			</Visibility>
 		</Command>
+		<Command name="Document.ПриказыКадровые.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>false</xr:Common>
+			</Visibility>
+		</Command>
 		<Command name="Catalog.Классы.StandardCommand.OpenList">
 			<Visibility>
-				<xr:Common>true</xr:Common>
+				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
 		<Command name="Catalog.Предметы.StandardCommand.OpenList">
@@ -20,12 +25,12 @@
 		</Command>
 		<Command name="InformationRegister.ЧисленныйСостав.StandardCommand.OpenList">
 			<Visibility>
-				<xr:Common>true</xr:Common>
+				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
 		<Command name="Catalog.УчебныеПериоды.StandardCommand.OpenList">
 			<Visibility>
-				<xr:Common>true</xr:Common>
+				<xr:Common>false</xr:Common>
 				<xr:Value name="Role.Пользователь">false</xr:Value>
 			</Visibility>
 		</Command>
@@ -90,6 +95,11 @@
 			<Visibility>
 				<xr:Common>false</xr:Common>
 				<xr:Value name="Role.Пользователь">false</xr:Value>
+			</Visibility>
+		</Command>
+		<Command name="CommonForm.Параметры.StandardCommand.Open">
+			<Visibility>
+				<xr:Common>false</xr:Common>
 			</Visibility>
 		</Command>
 	</CommandsVisibility>

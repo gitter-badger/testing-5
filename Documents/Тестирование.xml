@@ -384,7 +384,7 @@
 					</Synonym>
 					<Comment/>
 					<ToolTip/>
-					<FillChecking>DontCheck</FillChecking>
+					<FillChecking>ShowError</FillChecking>
 				</Properties>
 				<ChildObjects>
 					<Attribute uuid="4ff75cec-d4dc-4285-8893-449d87db708c">
@@ -523,7 +523,7 @@
 					</Synonym>
 					<Comment/>
 					<ToolTip/>
-					<FillChecking>DontCheck</FillChecking>
+					<FillChecking>ShowError</FillChecking>
 				</Properties>
 				<ChildObjects>
 					<Attribute uuid="440836ea-6372-4fe5-b915-e3abc78b57c9">
